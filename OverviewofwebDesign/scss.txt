@@ -1,0 +1,25 @@
+sass- syntactically awesome style sheets
+1. Cross browser support
+2. Easy to manage & understand
+3. Increasing coding speed
+4. Decreasing css codes
+5. sass gives logical flavor like variable , array , Partial, mixin , Function, loop, Map, include , array etc.
+
+
+flexbox - flexible box
+1. No float property 
+2. Order any element
+3. Vertically align any element
+4. Create modern grids
+5. Take up reminding space
+6. Easily and space between elements 
+7. Make critical layout with less code 
+
+Grid layout with Percentage
+
+
+Bootstrap 5 css Framework 
+1. Easy to use 
+2. Responsive features
+3. Mobile-first approach
+4. browser compatiability
