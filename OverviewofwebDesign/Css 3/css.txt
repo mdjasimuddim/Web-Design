@@ -1,0 +1,153 @@
+we can write css in 3 ways 
+1)inline css
+2)External css - general purpose uses all over the world
+3)internal css
+
+
+css has property and value
+like property:value
+color : red/green/blue
+background-color : red/green/blue
+
+color can be written 3 ways:
+Solid color : Red/Green/blue
+RGB color : rgb(0-255, 0-255, 0-255)
+                red     green  blue
+Hexa / color code:0-9 A-Z a-f  start with #
+
+text align -> left/right/center/justify
+
+text-transform : uppercase/lowercase/capitalize
+font-weight:bold/small/400px/700px
+font-style:italic/normal
+text-decoration:underline/none;
+
+
+font-size:40px/50px/30px/30cm/30em/30rem/30%
+letter-spacing:20px/20cem/20%
+word-spacing:20px/20cem
+
+css can write 3 ways:
+inline css is in the html tag
+internal css is in the tag inside head
+external css is the new file that link is included in head tag
+
+
+
+id is important to access one html element
+class is also very important to css design with multiple html element
+
+//Margin is outer gap
+
+margin: (top + bottom)/2 (left + right)/2
+
+//padding is inner gap
+
+
+
+//div come from division
+
+
+//float property : value left or right 
+//overflow: hidden;
+
+
+//box-shadow: left to right top to bottom less opacity high density inset 
+//box-shadow: - right to left -bottom to top
+//inset use for internal design
+
+
+//text-shadow: same as box-shadow
+
+
+//border-radius: 50% ;;circle
+//border-radius: 30px 180px 30px 180px;
+
+
+a.btn{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 22px;
+    background-color: #333;
+    padding: 10px 25px;
+    color: #fff;
+    margin: 15px 0;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+
+a.btn::before
+{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #ff7720;
+    right: 100%;
+    top: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+a.btn:hover:before{
+    right: 0;
+}
+
+.flag{
+    width:500px;
+    height: 300px;
+    background-color: green;
+    margin: 50px auto;
+    position: relative;
+}
+
+
+
+.flag::after{
+    width:120px;
+    height:120px;
+    content: "";
+    position: absolute;
+    background-color: red;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+
+***position***
+
+//Relative --- > j assroi dibe 
+//absolute --- > j assroi nibe
+
+
+*** transform ****
+Rotate(0-360) -- ata ghurabe
+scale(1.1) -- ata boro korbe
+skew(deg) --- vaj kora ba chepta kora 
+translate --- dakka diya sorano
+
+
+*** pseudo elements ***
+:first-letter -- hyperlink and paragraph first letter
+:first-line - use for specific line
+:focus - use for input form
+:first-child
+:last-child
+:nth-child
+
+*** css var ***
+:root{
+    --bg-color: #999;
+    --title-color:red;
+    --font-size:40px;
+}
+.box{
+    background-color:var(--bg-color);
+}
+
+
