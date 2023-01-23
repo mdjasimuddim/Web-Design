@@ -1,0 +1,77 @@
+@import 'layouts/common';
+@import 'layouts/header';
+@import 'layouts/services';
+@import 'layouts/about';
+@import 'layouts/footer';
+
+
+.operators {
+    margin: 20px==30px;
+}
+
+//for loop in sass
+@for $i from 1 through 12 {
+    .pt-#{$i * 10} {
+        padding-top: $i * 10px;
+    }
+
+    .pb-#{$i * 10} {
+        padding-bottom: $i * 10px;
+    }
+
+    .mt-#{$i * 10} {
+        margin-top: $i * 10px;
+    }
+
+    .mb-#{$i * 10} {
+        margin-bottom: $i * 10px;
+    }
+}
+
+//each for sass
+@each $i in (uppercase, lowercase, capitalize) {
+    .text-#{$i} {
+        text-transform: $i;
+    }
+}
+
+$list: left, center, right, justify;
+
+@each $i in $list {
+    .text-#{$i} {
+        text-align: $i;
+    }
+}
+
+$map: (
+    h1,
+    50px,
+    700,
+    capitalize),
+    (h2, 40px, 600, capitalize),
+    (h3, 30px, 500, lowercase
+);
+
+@each $name,
+$font_size,
+$font_weight,
+$text-transform in $map {
+    #{$name} {
+        font-size: $font_size;
+        font-weight: $font_weight;
+        text-transform: $text-transform;
+    }
+}
+
+
+
+
+
+
+
+.clearfix::after,
+.clearfix::before {
+    content: "";
+    clear: both;
+    display: table;
+}
